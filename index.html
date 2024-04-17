@@ -1,0 +1,727 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="icon" type="image/png" href="./app/images/Logo.png" />
+        <title>Street ARTists</title>
+        <!-- Bootstrap 5.2 -->
+        <link
+            rel="stylesheet"
+            href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css
+    "
+        />
+        <!-- Main CSS and fonts -->
+        <link rel="stylesheet" href="./app/styles/main.css" />
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link
+            href="https://fonts.googleapis.com/css2?family=Reenie+Beanie&family=Roboto:wght@300&display=swap"
+            rel="stylesheet"
+        />
+        <!-- Font Awesome -->
+        <script
+            src="https://kit.fontawesome.com/ae261298fe.js"
+            crossorigin="anonymous"
+        ></script>
+        <!-- Chart -->
+        <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    </head>
+
+    <body>
+        <!-- Landing Page -->
+        <section class="page" id="landingPage">
+            <header></header>
+            <!-- Main Page Information Pop up -->
+            <div class="popup">
+                <div class="popup-content">
+                    <h1><i class="fa-solid fa-xmark"></i></h1>
+                    <h2 class="text-center">Infomation</h2>
+                    <p class="text-center fw-bolder fontcustom">
+                        This project is made for smaller resolutions, if you
+                        want to have a better experience press the X button and
+                        reduce the resolution or switch to mobile or tablet.
+                        Thank you.
+                    </p>
+                </div>
+            </div>
+            <!-- Join as ARTist -->
+            <main class="mainWrapper">
+                <img
+                    class="logo py-4"
+                    src="./app/images/Logo.png"
+                    alt="appLogo"
+                />
+                <div class="joinAsWrapper">
+                    <!-- Join As Artist -->
+                    <div class="joinAsArtistWrapper">
+                        <div class="joinAsArtist">
+                            <div class="artist">
+                                <p>Join as Artist</p>
+                                <select
+                                    id="artists"
+                                    name="choose"
+                                    class="btn selectArtist"
+                                ></select>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Join As Visitor -->
+                    <div class="joinAsVisitorWrapper">
+                        <div class="joinAsVisitor">
+                            <p class="visitor">Join as Visitor</p>
+                        </div>
+                    </div>
+                </div>
+            </main>
+        </section>
+
+        <!-- Visitor Home Page -->
+        <section class="page" id="visitorHomePage">
+            <nav>
+                <div class="navWrapper">
+                    <div class="logoWrapper">
+                        <a href="#landingPage">
+                            <img
+                                class="logo"
+                                src="./app/images/Logo.png"
+                                alt="applogo"
+                            />
+                        </a>
+                        <h1 class="title">Street ARTists</h1>
+                    </div>
+                    <div class="auctionBtn">
+                        <svg
+                            width="30"
+                            height="30"
+                            viewBox="0 0 30 30"
+                            fill="none"
+                            xmlns="http://www.w3.org/2000/svg"
+                        >
+                            <path
+                                d="M17.25 27.5V30.25H0.75V27.5H17.25ZM18.0557 0.943237L28.7505 11.638L26.8063 13.585L25.3487 13.0982L21.9429 16.5L29.7212 24.2784L27.777 26.2226L20 18.4442L16.6945 21.7497L17.0836 23.3062L15.138 25.2505L4.44325 14.5557L6.38888 12.6115L7.94263 12.9992L16.5969 4.34636L16.1115 2.88886L18.0557 0.943237Z"
+                                fill="#A26A5E"
+                            ></path>
+                        </svg>
+                    </div>
+                </div>
+            </nav>
+            <!-- Bricks  -->
+            <div class="backgroundBricks">
+                <div class="row bricks-1"></div>
+                <div class="row bricks-2"></div>
+                <div class="row bricks-3"></div>
+                <div class="row bricks-4"></div>
+                <div class="row bricks-5"></div>
+                <div class="row bricks-6"></div>
+                <div class="row bricks-7"></div>
+                <div class="row bricks-8"></div>
+                <div class="banner-title-button">
+                    <h2 class="fw-bold">Looking for masterpiece?</h2>
+                    <button class="btn callToAction">Find one now!</button>
+                </div>
+            </div>
+            <!-- Slider -->
+            <div class="sliderWrapper">
+                <div class="top">
+                    <img src="./app/images/sliderImages/img1.jpg" />
+                    <img src="./app/images/sliderImages/img2.jpg" />
+                    <img src="./app/images/sliderImages/img3.jpg" />
+                    <img src="./app/images/sliderImages/img4.jpg" />
+                    <img src="./app/images/sliderImages/img5.jpg" />
+                    <img src="./app/images/sliderImages/img1.jpg" />
+                    <img src="./app/images/sliderImages/img2.jpg" />
+                    <img src="./app/images/sliderImages/img3.jpg" />
+                    <img src="./app/images/sliderImages/img4.jpg" />
+                    <img src="./app/images/sliderImages/img5.jpg" />
+                </div>
+                <div class="bottom">
+                    <img src="./app/images/sliderImages/img6.jpg" />
+                    <img src="./app/images/sliderImages/img7.jpg" />
+                    <img src="./app/images/sliderImages/img8.jpg" />
+                    <img src="./app/images/sliderImages/img9.jpg" />
+                    <img src="./app/images/sliderImages/img10.jpg" />
+                    <img src="./app/images/sliderImages/img6.jpg" />
+                    <img src="./app/images/sliderImages/img7.jpg" />
+                    <img src="./app/images/sliderImages/img8.jpg" />
+                    <img src="./app/images/sliderImages/img9.jpg" />
+                    <img src="./app/images/sliderImages/img10.jpg" />
+                </div>
+            </div>
+            <!-- Carousel -->
+            <div class="carouselWrapper">
+                <button class="carousel_button carousel_button--left">
+                    <svg
+                        width="15"
+                        height="54"
+                        viewBox="0 0 15 54"
+                        fill="none"
+                        xmlns="http://www.w3.org/2000/svg"
+                    >
+                        <path
+                            d="M14 1L1 26.2877L14 53"
+                            stroke="#A26A5E"
+                            stroke-width="2"
+                            stroke-linecap="round"
+                            stroke-linejoin="round"
+                        ></path>
+                    </svg>
+                </button>
+                <ul
+                    class="carousel_slides-wrapper"
+                    style="
+                        transform: translateX(0px);
+                        transition: none 0s ease 0s;
+                    "
+                >
+                    <li class="carousel_slide current-slide" style="left: 0px">
+                        <div class="slide_left-part">
+                            <div class="slide_content">
+                                <img
+                                    src="./app/images/carouselImages/artist1.jpg"
+                                    alt="Artist1"
+                                />
+                                <p>
+                                    Lorem ipsum dolor sit amet, consectetur
+                                    adipiscing elit ut aliquam, purus sit amet
+                                    luctus venenatis.
+                                </p>
+                            </div>
+                        </div>
+                        <div class="border"></div>
+                        <div class="slide_right-part">
+                            <div class="slide_content">
+                                <p>
+                                    Lorem ipsum dolor sit amet, consectetur
+                                    adipiscing elit ut aliquam, purus sit amet
+                                    luctus venenatis, lectus magna fringilla
+                                    urna, porttitor.
+                                </p>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="carousel_slide" style="left: 408px">
+                        <div class="slide_left-part">
+                            <div class="slide_content">
+                                <img
+                                    src="./app/images/carouselImages/artist2.jpg"
+                                    alt="Artist2"
+                                />
+                                <p>
+                                    Lorem ipsum dolor sit amet, consectetur
+                                    adipiscing elit ut aliquam, purus sit amet
+                                    luctus venenatis.
+                                </p>
+                            </div>
+                        </div>
+                        <div class="border"></div>
+                        <div class="slide_right-part">
+                            <div class="slide_content">
+                                <p>
+                                    Lorem ipsum dolor sit amet, consectetur
+                                    adipiscing elit ut aliquam, purus sit amet
+                                    luctus venenatis, lectus magna fringilla
+                                    urna, porttitor.
+                                </p>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="carousel_slide" style="left: 816px">
+                        <div class="slide_left-part">
+                            <div class="slide_content">
+                                <img
+                                    src="./app/images/carouselImages/artist3.jpg"
+                                    alt="Artist3"
+                                />
+                                <p>
+                                    Lorem ipsum dolor sit amet, consectetur
+                                    adipiscing elit ut aliquam, purus sit amet
+                                    luctus venenatis.
+                                </p>
+                            </div>
+                        </div>
+                        <div class="border"></div>
+                        <div class="slide_right-part">
+                            <div class="slide_content">
+                                <p>
+                                    Lorem ipsum dolor sit amet, consectetur
+                                    adipiscing elit ut aliquam, purus sit amet
+                                    luctus venenatis, lectus magna fringilla
+                                    urna, porttitor.
+                                </p>
+                            </div>
+                        </div>
+                    </li>
+                </ul>
+                <button class="carousel_button carousel_button--right">
+                    <svg
+                        width="15"
+                        height="54"
+                        viewBox="0 0 15 54"
+                        fill="none"
+                        xmlns="http://www.w3.org/2000/svg"
+                    >
+                        <path
+                            d="M1 1L14 26.2877L1 53"
+                            stroke="#A26A5E"
+                            stroke-width="2"
+                            stroke-linecap="round"
+                            stroke-linejoin="round"
+                        ></path>
+                    </svg>
+                </button>
+            </div>
+        </section>
+
+        <!-- Visitor Listing Page -->
+        <section class="page" id="visitorListingPage">
+            <nav>
+                <div class="navWrapper">
+                    <div class="logoWrapper">
+                        <a href="#landingPage">
+                            <img
+                                class="logo"
+                                src="./app/images/Logo.png"
+                                alt="applogo"
+                            />
+                        </a>
+                        <h1 class="title">Street ARTists</h1>
+                    </div>
+                    <div class="auctionBtn">
+                        <svg
+                            width="30"
+                            height="30"
+                            viewBox="0 0 30 30"
+                            fill="none"
+                            xmlns="http://www.w3.org/2000/svg"
+                        >
+                            <path
+                                d="M17.25 27.5V30.25H0.75V27.5H17.25ZM18.0557 0.943237L28.7505 11.638L26.8063 13.585L25.3487 13.0982L21.9429 16.5L29.7212 24.2784L27.777 26.2226L20 18.4442L16.6945 21.7497L17.0836 23.3062L15.138 25.2505L4.44325 14.5557L6.38888 12.6115L7.94263 12.9992L16.5969 4.34636L16.1115 2.88886L18.0557 0.943237Z"
+                                fill="#A26A5E"
+                            ></path>
+                        </svg>
+                    </div>
+                </div>
+            </nav>
+            <div id="visitorCardContainer"></div>
+            <button class="btn btn-filter">
+                <i class="fa-solid fa-arrow-down-wide-short"></i>
+            </button>
+            <div id="filterPanel">
+                <div class="filterWrapper">
+                    <button class="btn-close-filter">
+                        <span class="btn-close-label">Close</span>
+                    </button>
+                    <h2 class="fw-bold">Filter by</h2>
+                    <div class="filter-title">
+                        <label for="item-title">By Item Title</label>
+                        <input
+                            type="text"
+                            id="item-title"
+                            placeholder="Item Title"
+                            class="title-input"
+                        />
+                        <div class="border"></div>
+                    </div>
+                    <div class="filter filter-artist">
+                        <label for="artist-filter">By Artist</label>
+                        <select
+                            id="artists-filter"
+                            placeholder="Choose"
+                        ></select>
+                        <div class="border"></div>
+                    </div>
+                    <div class="filter filter-price">
+                        <p>By Price</p>
+                        <div class="prices">
+                            <label for="min-price"
+                                >Min:
+                                <input
+                                    type="number"
+                                    id="min-price"
+                                    placeholder="Price"
+                                    class="min-price-input"
+                                />
+                            </label>
+                            <label for="max-price"
+                                >Max:
+                                <input
+                                    type="number"
+                                    id="max-price"
+                                    placeholder="Price"
+                                    class="max-price-input"
+                                />
+                            </label>
+                        </div>
+                        <div class="border"></div>
+                    </div>
+                    <div class="filter filter-type">
+                        <label for="type">By Type</label>
+                        <select id="types-filter" placeholder="Choose"></select>
+                        <div class="border"></div>
+                    </div>
+                </div>
+                <button class="btn-done-filter">
+                    <i class="F"></i>
+                </button>
+            </div>
+        </section>
+
+        <!-- Artist Home Page -->
+        <section class="page" id="artistHomePage">
+            <nav>
+                <div class="navWrapper">
+                    <div class="logoWrapper">
+                        <a href="#landingPage">
+                            <img
+                                class="logo"
+                                src="./app/images/Logo.png"
+                                alt="applogo"
+                            />
+                        </a>
+                        <h1 class="artistName"></h1>
+                    </div>
+                    <button class="barsBtn">
+                        <svg
+                            width="32"
+                            height="25"
+                            viewBox="0 0 32 25"
+                            fill="none"
+                            xmlns="http://www.w3.org/2000/svg"
+                        >
+                            <path
+                                d="M32 4.99995V0.199951H0V4.99995H32ZM32 14.6V9.79995H0V14.6H32ZM32 24.2V19.4H0V24.2H32Z"
+                                fill="#A26A5E"
+                            ></path>
+                        </svg>
+                    </button>
+                </div>
+                <div class="navList">
+                    <a href="#artistHomePage" class="navLink">Home</a>
+                    <a href="#artistItemsPage" class="navLink">Items</a>
+                    <a href="#artistAuctionPage" class="navLink">Auction</a>
+                </div>
+            </nav>
+
+            <!-- Artist Items Widgets -->
+            <div class="artistItemsWidgets">
+                <div class="totalItems">
+                    <div class="itemsWrapper">
+                        <p>Total Items Sold</p>
+                        <span class="itemsValue"></span>
+                    </div>
+                </div>
+                <div class="totalIncome">
+                    <div class="incomeWrapper">
+                        <p>Total Income</p>
+                        <span class="incomeValue"></span>
+                    </div>
+                </div>
+                <div class="auctioningItem">
+                    <div class="auctionWrapper">
+                        <p>Live Auctioning Item</p>
+                        <span class="auctionValue"></span>
+                        <p>current bid</p>
+                    </div>
+                </div>
+            </div>
+            <div class="daysPickerOptions">
+                <div class="optionsWrapper">
+                    <p>Display my income for the last:</p>
+                    <div class="daysBtns">
+                        <button id="last7">Last 7</button>
+                        <button id="last14">Last 14</button>
+                        <button id="last30">Last 30</button>
+                    </div>
+                </div>
+            </div>
+            <div class="incomeChart">
+                <canvas id="myChart" width="364" height="378"> </canvas>
+            </div>
+        </section>
+
+        <!-- Artist Items Page -->
+        <section class="page" id="artistItemsPage">
+            <nav>
+                <div class="navWrapper">
+                    <div class="logoWrapper">
+                        <a href="#landingPage">
+                            <img
+                                class="logo"
+                                src="./app/images/Logo.png"
+                                alt="applogo"
+                            />
+                        </a>
+                        <h1 class="artistName"></h1>
+                    </div>
+                    <button class="barsBtn">
+                        <svg
+                            width="32"
+                            height="25"
+                            viewBox="0 0 32 25"
+                            fill="none"
+                            xmlns="http://www.w3.org/2000/svg"
+                        >
+                            <path
+                                d="M32 4.99995V0.199951H0V4.99995H32ZM32 14.6V9.79995H0V14.6H32ZM32 24.2V19.4H0V24.2H32Z"
+                                fill="#A26A5E"
+                            ></path>
+                        </svg>
+                    </button>
+                </div>
+                <div class="navList">
+                    <a href="#artistHomePage" class="navLink">Home</a>
+                    <a href="#artistItemsPage" class="navLink">Items</a>
+                    <a href="#artistAuctionPage" class="navLink">Auction</a>
+                </div>
+            </nav>
+            <a href="#addNewItemPage" class="addNewItemWrapper">
+                <div class="addNewItem">
+                    <p>+ Add new item</p>
+                </div>
+            </a>
+            <div id="artistCardContainer"></div>
+            <div class="confirm-screen"></div>
+            <div class="confirm-popup">
+                <p>Are you sure you want to delete this card?</p>
+                <button class="confirm">Confirm</button>
+                <button class="cancel">Cancel</button>
+            </div>
+        </section>
+
+        <!-- Artist Add New Item Page -->
+        <section class="page" id="addNewItemPage">
+            <nav>
+                <div class="navWrapper">
+                    <div class="logoWrapper">
+                        <a href="#landingPage">
+                            <img
+                                class="logo"
+                                src="./app/images/Logo.png"
+                                alt="applogo"
+                            />
+                        </a>
+                        <h1 class="artistName"></h1>
+                    </div>
+                    <button class="barsBtn">
+                        <svg
+                            width="32"
+                            height="25"
+                            viewBox="0 0 32 25"
+                            fill="none"
+                            xmlns="http://www.w3.org/2000/svg"
+                        >
+                            <path
+                                d="M32 4.99995V0.199951H0V4.99995H32ZM32 14.6V9.79995H0V14.6H32ZM32 24.2V19.4H0V24.2H32Z"
+                                fill="#A26A5E"
+                            ></path>
+                        </svg>
+                    </button>
+                </div>
+                <div class="navList">
+                    <a href="#artistHomePage" class="navLink">Home</a>
+                    <a href="#artistItemsPage" class="navLink">Items</a>
+                    <a href="#artistAuctionPage" class="navLink">Auction</a>
+                </div>
+            </nav>
+            <div class="newItemWrapper">
+                <div class="newItemInner">
+                    <div class="title-checkbox">
+                        <h2 class="fw-bold">Add new Item</h2>
+                        <div class="is-published">
+                            <label for="is_published">Is published</label>
+                            <input checked type="checkbox" id="is_published" />
+                        </div>
+                    </div>
+                    <div class="itemTitleNew">
+                        <label for="itemTitleNew">Title</label>
+                        <input type="text" id="itemTitleNew" />
+                    </div>
+                    <div class="itemDescriptionNew">
+                        <label for="itemDescriptionNew">Description</label>
+                        <textarea id="itemDescriptionNew"></textarea>
+                    </div>
+                    <div class="new-item_type-price">
+                        <div class="itemTypeNew">
+                            <label for="itemTypeNew">Type</label>
+                            <select id="itemTypeNew">
+                                <option value="" disabled="" selected="">
+                                    Choose
+                                </option>
+                                <option value="painting">painting</option>
+                                <option value="sculpture">sculpture</option>
+                                <option value="digital">digital</option>
+                                <option value="custom">custom</option>
+                            </select>
+                        </div>
+                        <div class="priceItemNew">
+                            <label for="priceItemNew">Price</label>
+                            <input type="number" id="priceItemNew" />
+                        </div>
+                    </div>
+                    <div class="imgURLnew">
+                        <label for="imgURLnew">Image URL</label>
+                        <input type="text" id="imgURLnew" />
+                    </div>
+                    <span>or</span>
+                    <div class="add-image">
+                        <div class="imageDisplayedWrap" style="display: none">
+                            <div class="img-del-btn">
+                                <img src="" id="newImageDisplayed" />
+                                <button class="trashcanDelete">
+                                    <img src="./app/images/trash-can.svg" />
+                                </button>
+                            </div>
+                        </div>
+                        <a href="#artistCaptureImage" class="take-snapshot">
+                            <img src="./app/images/camera.svg" alt="capture" />
+                            <p>Take a snapshot</p>
+                        </a>
+                        <div class="upload-file">
+                            <label for="file-input">
+                                <img
+                                    src="./app/images/upload-file.svg"
+                                    alt="upload"
+                                />
+                                <p>Upload Image</p>
+                            </label>
+                            <input
+                                id="file-input"
+                                type="file"
+                                accept="image/*"
+                            />
+                        </div>
+                    </div>
+                    <div class="add-cancel-btns">
+                        <button class="btn fw-bold buttonAdd">
+                            Add new Item
+                        </button>
+                        <button class="btn fw-bold buttonCancel">Cancel</button>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Artist Capture Image -->
+        <section class="page" id="artistCaptureImage">
+            <nav>
+                <div class="navWrapper">
+                    <div class="logoWrapper">
+                        <a href="#landingPage">
+                            <img
+                                class="logo"
+                                src="./app/images/Logo.png"
+                                alt="applogo"
+                            />
+                        </a>
+                        <h1 class="artistName"></h1>
+                    </div>
+                    <button class="barsBtn">
+                        <svg
+                            width="32"
+                            height="25"
+                            viewBox="0 0 32 25"
+                            fill="none"
+                            xmlns="http://www.w3.org/2000/svg"
+                        >
+                            <path
+                                d="M32 4.99995V0.199951H0V4.99995H32ZM32 14.6V9.79995H0V14.6H32ZM32 24.2V19.4H0V24.2H32Z"
+                                fill="#A26A5E"
+                            ></path>
+                        </svg>
+                    </button>
+                </div>
+                <div class="navList">
+                    <a href="#artistHomePage" class="navLink">Home</a>
+                    <a href="#artistItemsPage" class="navLink">Items</a>
+                    <a href="#artistAuctionPage" class="navLink">Auction</a>
+                </div>
+            </nav>
+            <div class="captureWrapper">
+                <video srcObject id="liveStream" height="657" autoplay></video>
+                <canvas
+                    id="captureStream"
+                    class="d-none"
+                    height="420"
+                    width="720"
+                ></canvas>
+                <div class="cameraBtns">
+                    <button id="captureImage">
+                        <img
+                            src="./app/images/camera.svg"
+                            alt="camera snapshot"
+                        />
+                    </button>
+                    <button id="stopStream">
+                        <i class="fa-solid fa-stop"></i>
+                    </button>
+                </div>
+            </div>
+        </section>
+
+        <!-- Artist Auction Page -->
+        <section class="page" id="artistAuctionPage">
+            <nav>
+                <div class="navWrapper">
+                    <div class="logoWrapper">
+                        <a href="#landingPage">
+                            <img
+                                class="logo"
+                                src="./app/images/Logo.png"
+                                alt="applogo"
+                            />
+                        </a>
+                        <h1 class="title">Street ARTists</h1>
+                    </div>
+                    <button class="barsBtn">
+                        <svg
+                            width="32"
+                            height="25"
+                            viewBox="0 0 32 25"
+                            fill="none"
+                            xmlns="http://www.w3.org/2000/svg"
+                        >
+                            <path
+                                d="M32 4.99995V0.199951H0V4.99995H32ZM32 14.6V9.79995H0V14.6H32ZM32 24.2V19.4H0V24.2H32Z"
+                                fill="#A26A5E"
+                            ></path>
+                        </svg>
+                    </button>
+                </div>
+                <div class="navList">
+                    <a href="#artistHomePage" class="navLink">Home</a>
+                    <a href="#artistItemsPage" class="navLink">Items</a>
+                    <a href="#artistAuctionPage" class="navLink">Auction</a>
+                </div>
+            </nav>
+            <div class="artistAuctionWrapper">
+                <h2 class="auction-info text-center">
+                    There is no items in Auction right now.
+                </h2>
+                <span class="stay-tuned fw-bold text-center"
+                    >This part of the page is currently not working, visit us
+                    again soon. Тhank you for waiting.</span
+                >
+            </div>
+            <div class="popup">
+                <div class="popup-content">
+                    <h1><i class="fa-solid fa-xmark"></i></h1>
+                    <h2 class="text-center">Infomation</h2>
+                    <p class="text-center fw-bolder fontcustom">
+                        This project is made for smaller resolutions, if you
+                        want to have a better experience press the X button and
+                        reduce the resolution or switch to mobile or tablet.
+                        Thank you.
+                    </p>
+                </div>
+            </div>
+        </section>
+
+        <!-- My JS -->
+        <script type="module" src="./app/main.js"></script>
+        <!-- BootStrap JS (if needed) -->
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js
+  "></script>
+    </body>
+</html>

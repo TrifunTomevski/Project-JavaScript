@@ -1,0 +1,61 @@
+@import "./landingPage.css";
+@import "./visitorHomePage.css";
+@import "./visitorListingPage.css";
+@import "./artistHomePage.css";
+@import "./artistItemsPage.css";
+@import "./addNewItemPage.css";
+@import "./artistCaptureImage.css";
+@import "./auction.css";
+
+body {
+    font-family: "Roboto", sans-serif;
+    box-sizing: border-box;
+    height: 100vh;
+}
+body,
+h1,
+h2,
+h3,
+h4,
+p {
+    margin: 0;
+}
+h1 {
+    font-size: 30px;
+    font-weight: 500;
+    line-height: 30px;
+    font-family: "Reenie Beanie";
+    color: #a16a5e;
+}
+h2 {
+    font-weight: 500;
+    line-height: 35px;
+}
+p {
+    font-size: 9px;
+    line-height: 13px;
+}
+header {
+    display: grid;
+    place-items: center;
+    font-family: "Reenie Beanie", cursive;
+    font-size: 35px;
+    height: 70px;
+    color: #a16a5e;
+    background-color: #fcebd5;
+    box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.25);
+    z-index: 1000;
+}
+.page {
+    display: none;
+}
+button {
+    cursor: pointer;
+    border: none;
+    outline: none;
+    border-radius: 2px;
+    box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.25);
+}
+a {
+    text-decoration: none;
+}

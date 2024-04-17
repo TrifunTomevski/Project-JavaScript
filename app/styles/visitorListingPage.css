@@ -1,0 +1,197 @@
+#visitorListingPage {
+    background-color: #edd5bb;
+}
+#visitorCardContainer {
+    background-color: #edd5bb;
+    position: relative;
+}
+
+.card {
+    height: 260px;
+    margin-bottom: 40px;
+    border-radius: 2px;
+    box-shadow: rgba(0, 0, 0, 0.2) 0px 2px 5px;
+}
+.card-img-top {
+    min-height: 165px;
+    object-fit: cover;
+}
+.card-body {
+    padding: 10px 20px;
+}
+.card-artist {
+    font-family: "Reenie Beanie", cursive;
+    font-size: 30px;
+}
+.card-title {
+    font-size: 14px;
+    margin-bottom: 1px;
+}
+.card-info {
+    font-size: 11px;
+}
+
+.visitor-card-light {
+    background-color: #fcebd5;
+}
+.visitor-card-dark {
+    background-color: #a16a5e;
+}
+.visitor-card-light .card-artist,
+.visitor-card-light .card-title,
+.visitor-card-light .card-info,
+.visitor-card-dark .btn-price {
+    color: #a16a5e;
+}
+.visitor-card-dark .card-artist,
+.visitor-card-dark .card-title,
+.visitor-card-dark .card-info,
+.visitor-card-light .btn-price {
+    color: #fcebd5;
+}
+.visitor-card-light .btn-price {
+    background-color: #a16a5e;
+}
+.visitor-card-dark .btn-price {
+    background-color: #fcebd5;
+}
+.visitor-card-light:nth-child(1) {
+    margin-top: 40px;
+}
+
+.btn-price {
+    font-size: 12px;
+    width: 45px;
+    height: 20px;
+}
+.btn-filter {
+    position: fixed;
+    bottom: 20px;
+    right: 18px;
+    z-index: 1000;
+    width: 65px;
+    height: 67px;
+    font-size: 35px;
+    border-radius: 2px;
+    color: #fcebd5;
+    background-color: #d44c2e !important;
+    box-shadow: 0px 6px 6px rgba(0, 0, 0, 0.25);
+}
+.btn-filter i:before,
+.btn-filter.open,
+.btn-filter.open i:before {
+    color: #fcebd5 !important;
+}
+.btn-filter.open {
+    background-color: #d44c2e !important;
+}
+.btn-filter.open i:before {
+    content: "\f00c";
+}
+.btn-close-filter {
+    position: absolute;
+    top: 15x;
+    right: 0;
+    z-index: 1000;
+    width: 40px;
+    height: 40px;
+    padding: 0;
+    border: none;
+    color: #fcebd5;
+    background-color: transparent;
+    cursor: pointer;
+}
+.btn-close-filter:before,
+.btn-close-filter:after {
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 30px;
+    height: 2px;
+    background-color: #fcebd5;
+    transform: translate(-50%, -50%) rotate(45deg);
+}
+.btn-close-filter:after {
+    transform: translate(-50%, -50%) rotate(-45deg);
+}
+.btn-close-label {
+    position: absolute;
+    top: -9999px;
+    left: -9999px;
+}
+
+#filterPanel {
+    position: fixed;
+    top: 0;
+    right: -100%;
+    z-index: 999;
+    width: 100%;
+    height: 100%;
+    margin-top: 70px;
+    overflow: scroll;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    background-color: #a16a5e;
+    transition: right 0.5s ease-out;
+}
+
+.filterWrapper {
+    position: relative;
+    margin: 20px 18px;
+}
+.filterWrapper h2 {
+    margin-bottom: 22px;
+    font-size: 30px;
+    font-weight: 500;
+    line-height: 35px;
+    color: #fcebd5;
+}
+.filterWrapper label,
+.filterWrapper p {
+    margin-bottom: 20px;
+    font-size: 18px;
+    font-weight: 300;
+    line-height: 21px;
+}
+.filterWrapper label,
+.filterWrapper input,
+.filterWrapper select,
+.filterWrapper p,
+.filterWrapper ::placeholder {
+    color: #edd5bb;
+}
+.filterWrapper input,
+.filterWrapper select {
+    height: 27px;
+    width: 97px;
+    margin-bottom: 32px;
+    background-color: transparent;
+    outline: none;
+    border: 1px solid #edd5bb;
+    border-radius: 2px;
+}
+.filterWrapper select,
+.filterWrapper ::placeholder {
+    font-size: 13px;
+    line-height: 15px;
+    font-weight: 300;
+    padding-left: 8px;
+}
+.filterWrapper .border {
+    margin-bottom: 40px;
+    border-top: 1px solid #fcebd5 !important;
+    border-radius: 2px;
+}
+.filter-title,
+.filter-artist,
+.filter-price,
+.filter-type {
+    display: flex;
+    flex-direction: column;
+}
+.filter-price .prices {
+    display: flex;
+    justify-content: space-between;
+}

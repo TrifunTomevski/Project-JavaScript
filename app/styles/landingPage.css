@@ -1,0 +1,147 @@
+#landingPage {
+    height: 100vh;
+    background-color: #fcebd5;
+}
+
+.mainWrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.logo {
+    width: 145px;
+}
+
+.joinAsWrapper {
+    width: 260px;
+    height: 390px;
+    position: relative;
+}
+.joinAsArtistWrapper,
+.joinAsVisitorWrapper {
+    position: absolute;
+    transition: filter 0.7s;
+}
+.joinAsVisitorWrapper {
+    bottom: 0;
+}
+.joinAsArtistWrapper:hover,
+.joinAsVisitorWrapper:hover {
+    -webkit-animation: backtofront 1.2s linear forwards;
+    animation: backtofront 1.2s linear forwards;
+    filter: drop-shadow(-1px 5px 23px rgba(0, 0, 0, 0.66));
+    position: absolute;
+    z-index: 1000;
+}
+.joinAsArtist,
+.joinAsVisitor {
+    position: absolute;
+    height: 285px;
+    width: 260px;
+    display: flex;
+    justify-content: center;
+    transition: all ease-in-out 0.3s;
+    cursor: pointer;
+}
+.joinAsArtist {
+    top: 0;
+    -webkit-clip-path: polygon(0 0, 100% 0%, 100% 100%, 0 42%);
+    clip-path: polygon(0 0, 100% 0%, 100% 100%, 0 42%);
+    background-color: #edd5bb;
+}
+.joinAsVisitor {
+    bottom: 0;
+    -webkit-clip-path: polygon(0 0, 100% 58%, 100% 100%, 0 100%);
+    clip-path: polygon(0 0, 100% 58%, 100% 100%, 0 100%);
+    background-color: #a16a5e;
+}
+.joinAsArtist:hover,
+.joinAsVisitor:hover {
+    transform: scale(1.05) translate(0px, -5px);
+}
+
+.artist {
+    top: 30px;
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+}
+.artist p,
+.joinAsVisitor p {
+    font-family: "Reenie Beanie", cursive;
+    font-size: 45px;
+    font-weight: 500;
+}
+.artist p {
+    padding: 25px 0;
+    color: #a16a5e;
+}
+
+.joinAsVisitor p {
+    position: absolute;
+    bottom: 60px;
+    color: #edd5bb;
+}
+
+.selectArtist {
+    width: 100px;
+    height: 27px;
+    padding: 6px auto;
+    font-size: 13px;
+    font-weight: 300;
+    cursor: pointer;
+    outline: none;
+    color: #a16a5e;
+    border: 1px solid #a16a5e;
+    border-radius: 2px;
+    transition: all 0.05s ease;
+}
+
+option {
+    color: #a16a5e;
+    background-color: transparent;
+}
+
+.popup {
+    position: fixed;
+    top: 0;
+    width: 100vw;
+    height: 100vh;
+    background-color: rgba(0, 0, 0, 0.6);
+    display: grid;
+    place-content: center;
+    opacity: 0;
+    z-index: 999;
+    pointer-events: none;
+    transition: 200ms ease-in-out opacity;
+}
+.popup-content {
+    width: clamp(300px, 80vw, 600px);
+    background-color: #a16a5e;
+    padding: 60px;
+    box-shadow: 0 0 0.5em rgba(0, 0, 0, 0.5);
+    border-radius: 0.5em;
+    opacity: 0;
+    transform: translateY(20%);
+    transition: 200ms ease-in-out opacity, 200ms ease-in-out transform;
+    position: relative;
+}
+.popup h1 {
+    position: absolute;
+    top: 2rem;
+    right: 2rem;
+    cursor: pointer;
+    color: black !important;
+}
+.fontcustom {
+    padding-top: 5px;
+    font-size: 13px;
+    letter-spacing: 1px;
+}
+.showPopup {
+    opacity: 1;
+    transform: translateY(0);
+    pointer-events: all;
+}

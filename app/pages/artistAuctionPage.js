@@ -1,0 +1,2 @@
+// Navigating
+export function initArtistAuctionPage() {}

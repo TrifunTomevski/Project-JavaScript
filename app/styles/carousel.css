@@ -1,0 +1,89 @@
+.carouselWrapper {
+    position: relative;
+    height: 257px;
+    width: 100%;
+    max-width: 800px;
+    margin: 0 auto;
+    overflow: hidden;
+    background-color: #fcebd5;
+}
+.carousel_button {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: transparent;
+    z-index: 10;
+    padding: 0;
+}
+.carousel_button svg path {
+    transition: stroke 0.3s ease;
+}
+.carousel_button svg:hover path {
+    stroke: #e09686;
+}
+.carousel_button--left {
+    left: 19px;
+}
+.carousel_button--right {
+    right: 19px;
+}
+.carousel_slides-wrapper {
+    position: relative;
+    height: 100%;
+    padding: 0;
+    margin: 0;
+    transition: transform 0.25s ease;
+}
+.carousel_slides-wrapper .border {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    height: 100%;
+    border-right: 2px solid #a16a5e !important;
+}
+.carousel_slide {
+    width: 100%;
+    padding: 0 10%;
+    top: 50%;
+    transform: translateY(-50%);
+    position: absolute;
+    transition: opacity 0.5s ease-in;
+    display: flex;
+}
+
+.slide_left-part,
+.slide_right-part {
+    width: 50%;
+    padding: 2.5rem 2rem;
+}
+.slide_left-part .slide_content {
+    background-color: #e09686;
+    padding: 7px 10px;
+    position: relative;
+}
+.slide_left-part .slide_content img {
+    height: 46px;
+    width: 46px;
+    -o-object-fit: cover;
+    object-fit: cover;
+    border: 2px solid #a16a5e;
+    border-radius: 50%;
+    position: absolute;
+    top: -23px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+.slide_content p {
+    font-size: 9px;
+    font-weight: 400;
+    line-height: 12px;
+    text-align: center;
+}
+.slide_right-part p {
+    padding: 15px 0;
+    color: #a16a5e !important;
+}
+.slide_left-part p {
+    padding-top: 25px;
+    color: #f8f8f8;
+}

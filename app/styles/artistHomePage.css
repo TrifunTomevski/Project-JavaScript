@@ -1,0 +1,122 @@
+.barsBtn {
+    margin-right: 22px;
+    padding: 0;
+    color: #a16a5e;
+    background-color: transparent;
+}
+
+.navList {
+    width: 100%;
+    padding: 20px 0;
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    background-color: #a16a5e;
+    box-shadow: 0px 5px 5px rgba(0, 0, 0, 0.25);
+    transform: translateY(-105%);
+    transition: 300ms ease-in-out;
+    z-index: 999;
+}
+.navList.active {
+    transform: translateY(0%);
+}
+.navList .navLink {
+    font-size: 32px;
+    line-height: 50px;
+    padding: 0 auto;
+    color: #fcebd5;
+    transition: 300ms ease-in-out;
+}
+
+.artistItemsWidgets {
+    height: 100%;
+    padding: 26px 18px 18px 18px;
+    display: flex;
+    flex-wrap: wrap;
+    background-color: #edd5bb;
+}
+.artistItemsWidgets span {
+    font-size: 48px;
+    font-weight: 800;
+    line-height: 56px;
+}
+.artistItemsWidgets p {
+    font-size: 17px;
+    font-weight: 300;
+    line-height: 21px;
+}
+
+.itemsWrapper p,
+.incomeWrapper p {
+    margin-bottom: 12px;
+}
+
+.totalItems {
+    padding-right: 18px;
+}
+.totalItems,
+.totalIncome {
+    width: 50%;
+}
+
+.auctioningItem {
+    width: 100%;
+    padding-top: 18px;
+}
+.auctionValue--unavailable {
+    font-size: 28px !important;
+}
+
+.itemsWrapper,
+.incomeWrapper,
+.auctionWrapper {
+    text-align: center;
+    color: #fcebd5;
+}
+.itemsWrapper,
+.incomeWrapper {
+    padding: 15px 5px;
+    background-color: #a16a5e;
+}
+.auctionWrapper {
+    padding: 10px;
+    background-color: #d44c2e;
+}
+
+.daysPickerOptions {
+    padding: 20px 18px;
+    background-color: #fcebd5;
+}
+
+.optionsWrapper {
+    display: flex;
+    flex-direction: column;
+}
+.optionsWrapper p {
+    font-size: 18px;
+    line-height: 21px;
+    color: #a16a5e;
+    margin-bottom: 9px;
+}
+
+.daysBtns {
+    display: flex;
+    justify-content: space-between;
+}
+.daysBtns button {
+    font-size: 12px;
+    width: 100px;
+    height: 27px;
+    color: #fcebd5;
+    background-color: #a16a5e;
+    box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.25);
+}
+.daysBtns button.active {
+    background-color: #d44c2e;
+}
+
+.incomeChart {
+    padding: 26px 18px;
+    background-color: #fcebd5;
+}

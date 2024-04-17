@@ -1,0 +1,35 @@
+.captureWrapper {
+    width: 100%;
+    min-height: 100vh;
+    padding: 51px 18px 36px;
+    background-color: #a16a5e;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.captureWrapper video {
+    width: 100%;
+    background-color: #5a5a5a;
+}
+.cameraBtns {
+    margin-top: 35px;
+    gap: 30px;
+    display: flex;
+    align-items: center;
+}
+
+#captureImage {
+    margin: 5px;
+}
+#captureImage img {
+    width: 55px;
+    height: 45px;
+}
+#captureImage,
+#stopStream {
+    background: transparent;
+}
+#stopStream {
+    font-size: 45px;
+    color: #edd5bb;
+}

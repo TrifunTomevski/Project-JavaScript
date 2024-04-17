@@ -1,0 +1,194 @@
+.newItemWrapper {
+    min-height: 100vh;
+    position: relative;
+    background-color: #a16a5e;
+}
+.newItemInner {
+    padding: 28px 18px;
+    flex-direction: column;
+    color: #fcebd5;
+}
+.newItemInner,
+.title-checkbox,
+.itemTitleNew,
+.itemDescriptionNew,
+.new-item_type-price,
+.imgURLnew,
+.itemTypeNew {
+    display: flex;
+}
+.newItemInner input:not([type="checkbox"]),
+.newItemInner textarea,
+.newItemInner select {
+    font-weight: 300;
+    padding-left: 5px;
+    appearance: none;
+    outline: none;
+    border-radius: 2px;
+    border: 1px solid #edd5bb;
+    color: #edd5bb;
+    background-color: transparent;
+}
+.newItemInner label {
+    font-size: 18px;
+    font-weight: 300;
+    line-height: 21px;
+    color: #edd5bb;
+}
+.newItemInner span {
+    margin: 7px 0;
+    text-align: center;
+    font-size: 18px;
+    font-weight: 300;
+    line-height: 21px;
+}
+
+.title-checkbox {
+    margin-bottom: 14px;
+    justify-content: space-between;
+    align-items: end;
+}
+.title-checkbox h2 {
+    font-size: 30px;
+}
+
+.is-published label {
+    width: fit-content;
+    font-size: 18px;
+    font-weight: 300;
+    line-height: 21px;
+}
+.is-published input {
+    width: 18px;
+    height: 17px;
+    border-radius: 2px;
+    appearance: none;
+    position: relative;
+    vertical-align: middle;
+    background-color: #fcebd5;
+}
+.is-published input:checked {
+    background-image: url(../images/check-mark.svg);
+    background-size: 80%;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.itemTitleNew,
+.itemDescriptionNew,
+.imgURLnew,
+.itemTypeNew,
+.priceItemNew {
+    flex-direction: column;
+}
+.itemTitleNew,
+.itemDescriptionNew {
+    margin-bottom: 27px;
+}
+.new-item_type-price {
+    margin-bottom: 20px;
+    gap: 28px;
+    align-items: center;
+}
+.itemTypeNew,
+.priceItemNew {
+    width: 50%;
+}
+.priceItemNew {
+    width: min-content;
+}
+.new-item_type-price input,
+.new-item_type-price select {
+    height: 27px;
+}
+
+.add-image {
+    height: 310px;
+    border: 2px dashed #fcebd5;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+}
+.add-image img {
+    margin: 0 auto;
+}
+.add-image p {
+    margin-top: 15px;
+    font-size: 18px;
+    line-height: 21px;
+    text-align: center;
+    color: #fcebd5;
+}
+.add-image label {
+    display: block;
+}
+
+.imageDisplayedWrap {
+    display: none;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 100%;
+    height: 100%;
+    transform: translate(-50%, -50%);
+}
+
+.img-del-btn {
+    margin: 0 auto;
+    height: 100%;
+    width: fit-content;
+    position: relative;
+    display: flex;
+    align-items: center;
+}
+
+#newImageDisplayed {
+    max-width: 100%;
+    max-height: 100%;
+}
+
+.trashcanDelete {
+    position: absolute;
+    top: 5px;
+    right: 5px;
+    padding: 5px;
+    border: 2px solid #d44c2e;
+    border-radius: 50%;
+}
+.trashcanDelete img {
+    margin-left: 1px;
+}
+
+.take-snapshot {
+    text-align: center;
+}
+.take-snapshot,
+.upload-file {
+    margin: 0 auto;
+}
+
+.upload-file,
+#file-input {
+    display: none;
+}
+
+.add-cancel-btns {
+    margin-top: 20px;
+    gap: 28px;
+    display: flex;
+}
+.buttonAdd,
+.buttonCancel {
+    width: 50%;
+    font-size: 18px;
+    line-height: 21px;
+}
+.buttonAdd {
+    background-color: #d44c2e !important;
+    color: #fcebd5 !important;
+}
+.buttonCancel {
+    background-color: #e5e5e5;
+    color: #5a5a5a;
+}
